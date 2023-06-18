@@ -1,0 +1,11 @@
+div{
+    border: 2px solid black;
+}
+
+#left-content, #right-content{
+    
+}
+body{
+    height: 100svh;
+    display: flex;
+}
