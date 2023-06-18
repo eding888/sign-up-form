@@ -31,16 +31,6 @@ p{
     animation: gradient 8s ease infinite;
     
 }
-.bubble{
-    position: absolute;
-    top: calc(50% - 50px);
-    left: calc(100% - 50px);
-    background-color: white;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    overflow:hidden;
-}
 
 #create-account{
     margin-left: 3%;
