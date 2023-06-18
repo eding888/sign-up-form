@@ -11,6 +11,7 @@
 </head>
 <body>
     <div id="right-content">
+        
         <p id="message">This is not a real online service!
         You know you need something like this in your life to help you realize your deepest dreams. 
         Sign up now to get started. <br> <br>You know you want to.</p>
@@ -18,32 +19,32 @@
             <form id="sign-up-form" action="" method="post">
                 <div class = "adjacent">
                     <div>
-                        <label for="">First Name<br></label>
-                        <input type="text" name="" id="">
+                        <label for="first-name">First Name<br></label>
+                        <input type="text" name="first-name" id="first-name" required>
                     </div>
                     <div>
-                        <label for="">Last Name<br></label>
-                        <input type="text" name="" id="">
-                    </div>
-                </div>
-                <div class = "adjacent">
-                    <div>
-                        <label for="">Email<br></label>
-                        <input type="text" name="" id="">
-                    </div>
-                    <div>
-                        <label for="">Phone Number<br></label>
-                        <input type="text" name="" id="">
+                        <label for="last-name">Last Name<br></label>
+                        <input type="text" name="last-name" id="last-name" required>
                     </div>
                 </div>
                 <div class = "adjacent">
                     <div>
-                        <label for="">Password<br></label>
-                        <input type="text" name="" id="">
+                        <label for="email">Email<br></label>
+                        <input type="email" name="email" id="email" required>
                     </div>
                     <div>
-                        <label for="">Confirm Password<br></label>
-                        <input type="text" name="" id="">
+                        <label for="phone-number">Phone Number<br></label>
+                        <input type="tel" name="phone-number" pattern="(\d{3}([\-]?)\d{3}([\-]?)\d{4})" title="Enter a valid 10 digit phone number." id="phone-number" required>
+                    </div>
+                </div>
+                <div class = "adjacent">
+                    <div>
+                        <label for="password">Password<br></label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div>
+                        <label for="confirm-password">Confirm Password<br></label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
                     </div>
                 </div>
                     

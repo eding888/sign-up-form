@@ -1,6 +1,14 @@
+*{
+    transition: 0.3s;
+}
 html{
     font-size: 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    height: 100svh;
+    display: flex;
+    flex-direction: row-reverse;
 }
 label{
     font-size: 0.8rem;
@@ -20,11 +28,18 @@ p{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 8s ease infinite;
     
 }
-*{
-    transition: 0.3s;
+.bubble{
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(100% - 50px);
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow:hidden;
 }
 
 #create-account{
@@ -51,6 +66,7 @@ p{
 
 }
 #sign-up-box{
+    position: relative;
     border-radius: 4px;
     width: 100%;
     background: rgb(103,89,241);
@@ -70,6 +86,7 @@ p{
 }
 
 #right-content{
+    
     background-color: #9eacf0;
     flex: 1 1 60%;
     display: flex;
@@ -121,9 +138,21 @@ p{
     align-items: center;
     transition: 0.3s
 }
-body{
 
-    height: 100svh;
-    display: flex;
-    flex-direction: row-reverse;
+@media only screen and (max-width:800px){
+    body{
+        flex-direction: column-reverse;
+    }
+    #right-content,#sign-up-form{
+        text-align: center;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #left-content{
+        background-size: 200% 300%;
+    }
+    #create-account{
+        margin-left: 0px;
+    }
 }
